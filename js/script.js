@@ -1,4 +1,3 @@
-// Get the computer's choice
 function getComputerChoice(arr){
     // Generate a random number for the index
     let index = Math.floor(Math.random() * arr.length);
@@ -33,7 +32,6 @@ function game(){
 
     // Play 5 rounds
     for (let i = 0; i < 5; i++){
-        // Get the player's choice
         let playerChoice = prompt("Enter rock, paper, or scissors: ");
 
         // Return the cancel message if the player clicks cancel on the prompt
@@ -41,7 +39,6 @@ function game(){
             return CANCEL_MSG;
         }
 
-        // Convert the players choice to lower case
         playerChoice = playerChoice.toLowerCase()
 
         // Validate player input
@@ -54,7 +51,6 @@ function game(){
         let compChoice = getComputerChoice(OPTIONS);
         let roundWinner = playRound(playerChoice, compChoice)
 
-        // Increment wins
         switch (roundWinner){
             case 'p':
                 playerWins++;
@@ -68,7 +64,6 @@ function game(){
         }
     }
 
-    // Display the total wins and ties
     console.log(`Player: ${playerWins} Computer: ${compWins} Ties: ${ties}`);
     
     // Determine the final winner
