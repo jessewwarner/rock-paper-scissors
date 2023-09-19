@@ -9,14 +9,17 @@
     <div class="game-container"></div>
         <h1>ROCK - PAPER - SCISSORS</h1>
         <div class="buttons">
-            <button class="rock">ROCK</button>
-            <button class="paper">PAPER</button>
-            <button class="scissors">SCISSORS</button>
+            <button class="game-button rock">ROCK</button>
+            <button class="game-button paper">PAPER</button>
+            <button class="game-button scissors">SCISSORS</button>
         </div>
         <div class="scores">
-            Player Wins: <span class="player-score">0</span> |
-            Computer Wins: <span class="computer-score">0</span> |
-            Ties: <span class="ties">0</span>
+            Player Wins: <span id="player-score">0</span> |
+            Computer Wins: <span id="computer-score">0</span> |
+            Ties: <span id="tie-score">0</span>
+        </div>
+        <div class="winner">
+            <h2 class="win-msg"></h2>
         </div>
     </div>
     <script src="js/script.js"></script>
